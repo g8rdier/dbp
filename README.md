@@ -14,7 +14,8 @@ Open source under the [MIT License](LICENSE).
 3. [Guiding Principle](#guiding-principle-keep-it-clean-and-simple)
 4. [Git Workflow](#git-workflow)
 5. [Commit Message Conventions](#commit-message-conventions)
-6. [AI-Assisted Development](#ai-assisted-development)
+6. [Versioning and Releases](#versioning-and-releases)
+7. [AI-Assisted Development](#ai-assisted-development)
 
 ---
 
@@ -172,6 +173,21 @@ When adding a commit body (the detailed description after the subject line), kee
 *   **Maximum 3 bullet points:** Limit commit bodies to 3 bullet points of description.
 *   **Why?** This enforces clarity and prevents commits from becoming too large or unfocused. If you need more than 3 points, consider breaking the work into smaller, more atomic commits.
 *   **Applies to all commits:** This guideline applies to merge commits, squash commits, and regular commits alike.
+
+---
+
+## Versioning and Releases
+
+### Semantic Versioning and Tagging
+
+Releases should follow [Semantic Versioning](https://semver.org/) (`MAJOR.MINOR.PATCH`).
+*   **When to tag:** Create a new tag (e.g., `v1.2.0`) when preparing a release. Tags should point to the merge commit on `main` that encapsulates the release changes.
+
+### CHANGELOG Convention
+
+Maintain a `CHANGELOG.md` file to keep releases readable for non-developers.
+*   **Format:** Follow the [Keep a Changelog](https://keepachangelog.com/) format.
+*   **When to update:** Update the CHANGELOG as part of the release PR, summarizing the feature and fix commits.
 
 ---
 
