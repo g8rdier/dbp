@@ -85,7 +85,7 @@ Changes to `main` should go through a pull request. Direct commits to `main` cre
 Pull requests targeting the `main` branch benefit from squash merging. This condenses the feature's entire commit history into a single, meaningful commit on the `main` branch.
 
 *   **Why?** Keeps the `main` branch history clean, readable, and focused on features and fixes rather than incremental work-in-progress commits.
-*   **PR Number Recommendation:** Include the PR number in brackets at the end (e.g., `feat: Add user authentication (#42)`) for traceability between commits and pull requests.
+*   **Commit Title Format:** Squash merge commit titles must contain both the associated issue number and the PR number at the end (e.g., `feat: add user authentication (fixes #12) (#42)`) for complete traceability.
 
 #### Exception: Experiment and Research Branches
 
@@ -99,7 +99,7 @@ Always delete the feature branch as part of the merge command itself.
 
 *   **How:** Pass `--delete-branch` to the `gh pr merge` command:
     ```
-    gh pr merge <number> --squash --delete-branch --subject "feat: Your title (#42)"
+    gh pr merge <number> --squash --delete-branch --subject "feat: your title (fixes #12) (#42)"
     ```
 *   **Why?** Makes branch cleanup an explicit, visible step rather than a hidden repository setting. Nothing is left to chance.
 
