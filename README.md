@@ -76,6 +76,7 @@ Every change should start with a GitHub issue before a branch is opened.
 Never commit directly to `main`. All changes must go through a feature branch and a pull request.
 
 *   **Why?** Direct commits bypass review, break the linear squash-merge history, and make it impossible to associate changes with a PR number.
+*   **Enforcement:** It is highly recommended to enforce this rule via GitHub's branch protection settings for `main` (Require a pull request before merging, prevent force pushes).
 
 ### 4. Pull Request Requirements
 
