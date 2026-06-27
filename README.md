@@ -62,6 +62,12 @@ Feature branches must be named using the same type prefix as the conventional co
 
 Every change should start with a GitHub issue before a branch is opened.
 
+#### Writing a Good Issue
+
+*   **Title Format:** Issue titles must use the same conventional commit prefixes as branches and commits (e.g., `feat:`, `fix:`, `docs:`).
+*   **Description Structure:** Provide clear context, steps to reproduce (for bugs), and expected outcomes (for features).
+*   **Bug vs Feature:** Clearly distinguish whether the issue is fixing broken behavior or adding new functionality.
+
 *   **Why?** Issues provide context for why a change is being made, create a reference point for discussion, and ensure the work is intentional. A branch without an issue has no traceable motivation.
 *   **Exception:** Trivial fixes (typos, obvious broken links) may skip the issue and go directly to a branch and PR.
 
