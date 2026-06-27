@@ -138,6 +138,13 @@ Changes that modify interfaces or introduce breaking changes benefit from stakeh
 *   **Approach:** Tag and get feedback from affected parties before merging.
 *   **Why?** Ensures coordination when connecting systems and prevents breaking dependent services.
 
+### 8. Hotfix Workflow
+
+When a critical production issue requires an immediate fix, the standard workflow may be expedited as an exception to the rules.
+
+*   **Format:** Create a branch prefixed with `hotfix/` (e.g., `hotfix/login-crash`).
+*   **Process:** An issue is still recommended but can be created retroactively. A Pull Request is still required, but it can bypass standard review times if a stakeholder approves immediately. Direct commits to `main` remain forbidden to ensure automated checks and history are preserved.
+
 ---
 
 ## Commit Message Conventions
