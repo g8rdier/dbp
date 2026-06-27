@@ -120,6 +120,12 @@ Most pull requests fall into this category.
 
 *   **Examples:** Bug fixes, feature additions, refactoring, tests, documentation updates
 *   **Approach:** Self-review thoroughly before merging.
+*   **Self-Review Checklist:**
+    *   Does the code work as intended?
+    *   Does it follow project coding standards and conventions?
+    *   Are there any obvious security vulnerabilities?
+    *   Is the test coverage adequate and passing?
+    *   Is the documentation (inline and external) updated?
 
 #### Consider Stakeholder Review
 
