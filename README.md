@@ -151,6 +151,8 @@ When a critical production issue requires an immediate fix, the standard workflo
 
 Following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) creates an explicit and readable commit history.
 
+**Rule:** Commit titles (both regular and merge commits) must be entirely lowercase.
+
 Prefix commit messages with a type:
 
 *   **feat:** A new feature
@@ -161,7 +163,7 @@ Prefix commit messages with a type:
 *   **test:** Adding missing tests, refactoring tests; no production code change
 *   **chore:** Updating build tasks etc.; no production code change
 
-**Example:** `feat: Add user authentication endpoint`
+**Example:** `feat: add user authentication endpoint`
 
 ### Commit Message Body Guidelines
 
